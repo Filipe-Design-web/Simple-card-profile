@@ -1,0 +1,170 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+.card{
+    width: 100%;
+    position: relative;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.introduction{
+    color: #4C4E61;
+    text-align: center;
+}
+
+.introduction h1{
+    line-height: 30px;
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.introduction h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.introduction p{
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 480px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A3A5AE;
+}
+
+.square{
+    position: relative;
+    right: -320px;
+    margin-top: 60px;
+    border-top: 4px solid #ff0000;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 10px hsl(229deg 6% 66% / 50%)
+}
+
+.square h3{
+    display: inline-block;
+    color: #4C4E61;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 0 0 20px;
+}
+.square p{
+    max-width: 230px;
+
+    font-size: 10px;
+    color: #4C4E61;
+
+    padding: 10px 0 0 20px;
+    letter-spacing: .1em;
+    line-height: 15px;
+}
+
+.square img{
+    float: right;
+    padding: 30px 20px 20px 0;
+}
+
+.position-2{
+    border-color: #549EF2;
+    top: 100px;
+}
+
+.position-3{
+    border-color: #45D3D3;
+    top: 100px;
+    right: 640px;
+}
+
+.position-4{
+    border-color: #FCAF4A;
+    top: -40px;
+}
+
+
+
+
+/*Tablets, etc*/
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    .container{
+        width: 768px;
+    }
+
+    .square{
+        position: relative;
+        right: -255px;
+        border-top: 4px solid #ff0000;
+    }
+
+    .position-2{
+        border-color: #549EF2;
+    }
+    
+    .position-3{
+        border-color: #45D3D3;
+        top: 100px;
+        right: 512px;
+    }
+
+    
+    .position-4{
+        border-color: #FCAF4A;
+    }
+    
+
+}
+
+
+
+/*Mobile*/
+@media only screen and (max-width: 767px) {
+    .container{
+        width: 350px;
+    }
+
+
+    .introduction h1{
+
+        font-size: 24px;
+    }
+    
+    .introduction h2{
+        font-size: 24px;
+    }
+    
+    .introduction p{
+        max-width: 280px;
+        padding-bottom: 30px;
+    }
+
+    .square{
+        margin: auto;
+        margin-top: 20px;
+        right: 0;
+    }
+
+    .square img{
+        margin-left: 195px;
+        float: none;
+        padding: 20px 0 20px 20px;
+    }
+
+
+    .position-img{
+        text-align: right;
+    }
+
+    .position-2, .position-3, .position-4{
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .position-4{
+        margin-bottom: 40px;
+    }
+
+
+}
